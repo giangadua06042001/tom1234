@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhap mot ki tu");
+    let TOM='QWERTYUIOPASDFGHJKLZXCVBNM';
+    let LOVE='qwertyuiopasdfghjklzxcvbnm';
+    let result=[];
+    for(let x=0; x<str.length; x++){
+        if(TOM.indexOf(str[x]) !==-1){
+            result.push(str[x].toLowerCase());
+        }else if(LOVE.indexOf(str[x] !==-1)){
+            result.push(str[x].toUpperCase());
+        }else {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''))
+</script>
+
+</body>
+</html>
